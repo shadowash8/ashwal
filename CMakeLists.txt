@@ -1,9 +1,11 @@
 cmake_minimum_required(VERSION 3.12)
-project(cwal LANGUAGES C)
+project(cwal16 VERSION 1.0.0 LANGUAGES C)
 
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+configure_file(${PROJECT_SOURCE_DIR}/include/version.h.in ${PROJECT_BINARY_DIR}/version.h)
 
 if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
     set(CMAKE_BUILD_TYPE Release CACHE STRING "Build type" FORCE)
@@ -46,6 +48,7 @@ add_executable(cwal ${SOURCES})
 target_include_directories(cwal PRIVATE
     ${PROJECT_SOURCE_DIR}/include
     ${PROJECT_SOURCE_DIR}/src
+    ${PROJECT_BINARY_DIR}
     ${MagickWand_INCLUDE_DIRS}
     ${imagequant_INCLUDE_DIRS}
     ${Lua_INCLUDE_DIRS}

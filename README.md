@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/c35fe6fa-d919-4831-98c5-640a6bbc4637"
-alt="cwal showcase" width="700"/>
+alt="cwal16 showcase" width="700"/>
 </p>
 
 `cwal` is a fast and lightweight command-line tool for generating dynamic color schemes from images. It extracts dominant colors from your chosen image and applies them to your terminal, applications, and other system components, providing a cohesive and visually appealing desktop experience.
@@ -27,7 +27,7 @@ alt="cwal showcase" width="700"/>
 - Dark mode
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/ddc1b78b-a4fd-4607-8919-071f1ef4785f"" width="260"/>
+  <img src="https://github.com/user-attachments/assets/ddc1b78b-a4fd-4607-8919-071f1ef4785f" width="260"/>
   <img src="https://github.com/user-attachments/assets/3f0a2d95-10a2-4713-bf29-d7e270e7f15c" width="260"/>
   <img src="https://github.com/user-attachments/assets/f41fd575-fde2-4fca-8445-9640d4f45476" width="260"/>
 </p>
@@ -54,7 +54,7 @@ alt="cwal showcase" width="700"/>
 
 
 
-`cwal` requires `imagemagick`, `libimagequant`, and `lua` as dependencies.
+`cwal16` requires `imagemagick`, `libimagequant`, and `lua` as dependencies.
 
 ### Prerequisites
 
@@ -88,24 +88,13 @@ brew install imagemagick libimagequant lua
 ```
 
 
-### Arch Linux (AUR)
-
-Install directly from the AUR:
-
-```bash
-yay -S cwal
-# or
-paru -S cwal
-```
-
-
 ### Building from Source
 
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/nitinbhat972/cwal.git
-cd cwal
+git clone https://github.com/shadowash8/cwal16.git
+cd cwal16
 ```
 
 2. **Build and install:**
@@ -150,6 +139,7 @@ Usage: cwal [OPTIONS] --img <image_path>
 - `--random <directory>`                Select random image from directory
 - `--theme <theme_name|random_dark|random_light|random_all>` Select a theme or a random one
 - `--preview`                           Preview palette
+- `--version`                           Version
 - `--help`                              Help
 
 **Examples:**
@@ -179,7 +169,7 @@ Terminal emulators (Alacritty, Kitty, Wezterm), window managers (i3, bspwm, Hypr
 
 ### Color Formatting in Templates
 
-`cwal` templates support various color formatting options. You can use these formats within your templates to customize the output for different applications.
+`cwal16` templates support various color formatting options. You can use these formats within your templates to customize the output for different applications.
 
 | Format Specifier | Description                                     | Example Output (for color with R=255, G=128, B=0, Alpha=0.8) |
 | :--------------- | :---------------------------------------------- | :----------------------------------------------------------- |
@@ -222,7 +212,7 @@ done
 
 ## Lua Scripting Support
 
-cwal now supports custom backends using Lua scripts. This allows you to implement your own color quantization algorithms or image processing techniques.
+cwal16 now supports custom backends using Lua scripts. This allows you to implement your own color quantization algorithms or image processing techniques.
 
 To create a custom backend:
 
@@ -491,6 +481,8 @@ Licensed under GNU GPL v3.0 — always free and open-source.
 
 
 ## Special Thanks
+
+- [cwal](https://github.com/nitinbhat972/cwal) by [nitinbhat972](https://github.com/nitinbhat972)
 
 - [pywal](https://github.com/dylanaraps/pywal) by [dylanaraps](https://github.com/dylanaraps)
 
