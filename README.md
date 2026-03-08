@@ -1,15 +1,14 @@
-## Introduction
-
 <p align="center">
   <img src="https://github.com/user-attachments/assets/c35fe6fa-d919-4831-98c5-640a6bbc4637"
 alt="cwal16 showcase" width="700"/>
 </p>
 
 `cwal` is a fast and lightweight command-line tool for generating dynamic color schemes from images. It extracts dominant colors from your chosen image and applies them to your terminal, applications, and other system components, providing a cohesive and visually appealing desktop experience.
+
 For more details see the [Wiki](https://github.com/shadowash8/cwal16/wiki/Home) page.
 
 
-## ✨ Features
+## Features
 
 - **Dynamic Color Generation**: Extracts a vibrant 16-color palette from any image
 - **Advanced Backend Support**: Utilizes `imagemagick` or `libimagequant` for efficient color quantization
@@ -22,7 +21,7 @@ For more details see the [Wiki](https://github.com/shadowash8/cwal16/wiki/Home) 
 - **Theme Management**: Load predefined themes or select random themes based on mode (dark/light/all)
 
 
-## 🖼️ Showcase
+## Showcase
 
 
 - Dark mode
@@ -51,7 +50,7 @@ For more details see the [Wiki](https://github.com/shadowash8/cwal16/wiki/Home) 
 </p>
 
 
-## 🚀 Installation
+## Installation
 
 
 
@@ -127,17 +126,17 @@ make
 sudo make install
 ```
 
-## 📖 Documentation
+## Documentation
 - [Getting Started](https://github.com/shadowash8/cwal16/wiki/Getting-Started)
 - [Templates](https://github.com/shadowash8/cwal16/wiki/Templates)
 - [Advanced Usage](https://github.com/shadowash8/cwal16/wiki/Advanced)
 - [Plugins](https://github.com/shadowash8/cwal16/wiki/Plugins)
 
-## 🤝 Contributing
+## Contributing
 
 Report issues, request features, or contribute via PRs. See the GitHub repository for more info.
 
-## 📄 License
+## License
 
 Licensed under GNU GPL v3.0 — always free and open-source.
 
