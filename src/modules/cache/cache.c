@@ -24,7 +24,7 @@ static void generate_cache_filename(char *buffer, size_t buffer_size,
   const char *cols16_mode_str =
       (palette->cols16_mode == DARKEN) ? "darken" : "lighten";
 
-  snprintf(buffer, buffer_size, "%s/schemes/%s_%s_%s_s%.2f_c%.2f_a%.2f_%s.cwal",
+  snprintf(buffer, buffer_size, "%s/schemes/%s_%s_%s_s%.2f_c%.2f_a%.2f_%s.ashwal",
            expanded_cache_dir, filename, mode_str, cols16_mode_str,
            palette->saturation, palette->contrast, palette->alpha,
            backend_name);

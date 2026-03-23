@@ -2,7 +2,7 @@
 #include "color/image.h"
 #include "core.h"
 
-#define CUSTOM_BACKEND_DIR "~/.config/cwal/backends"
+#define CUSTOM_BACKEND_DIR "~/.config/ashwal/backends"
 
 typedef struct {
   const char *name;

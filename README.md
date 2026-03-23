@@ -1,12 +1,11 @@
 <p align="center">
   <img src="https://github.com/user-attachments/assets/c35fe6fa-d919-4831-98c5-640a6bbc4637"
-alt="cwal16 showcase" width="700"/>
+alt="ashwal showcase" width="700"/>
 </p>
 
-`cwal` is a fast and lightweight command-line tool for generating dynamic color schemes from images. It extracts dominant colors from your chosen image and applies them to your terminal, applications, and other system components, providing a cohesive and visually appealing desktop experience.
+`ashwal` is a fast and lightweight command-line tool for generating dynamic color schemes from images. It extracts dominant colors from your chosen image and applies them to your terminal, applications, and other system components, providing a cohesive and visually appealing desktop experience.
 
-For more details see the [Wiki](https://github.com/shadowash8/cwal16/wiki/Home) page.
-
+For more details see the [Wiki](https://github.com/shadowash8/ashwal/wiki/Home) page.
 
 ## Features
 
@@ -20,9 +19,7 @@ For more details see the [Wiki](https://github.com/shadowash8/cwal16/wiki/Home) 
 - **Random Image Selection**: Automatically pick a random image from any specified directory
 - **Theme Management**: Load predefined themes or select random themes based on mode (dark/light/all)
 
-
 ## Showcase
-
 
 - Dark mode
 
@@ -49,12 +46,9 @@ For more details see the [Wiki](https://github.com/shadowash8/cwal16/wiki/Home) 
   <img src="https://github.com/user-attachments/assets/2ff60780-328d-4dbd-ba8e-4b4f776b510a" width="260"/>
 </p>
 
-
 ## Installation
 
-
-
-`cwal16` requires `imagemagick`, `libimagequant`, and `lua` as dependencies.
+`ashwal` requires `imagemagick`, `libimagequant`, and `lua` as dependencies.
 
 ### Prerequisites
 
@@ -83,6 +77,7 @@ sudo dnf install ImageMagick-devel libimagequant-devel lua-devel
 ```
 
 **macOS**
+
 ```bash
 brew install imagemagick libimagequant lua
 ```
@@ -92,9 +87,9 @@ brew install imagemagick libimagequant lua
 Install directly from the AUR:
 
 ```bash
-yay -S cwal16
+yay -Sashwal
 # or
-paru -S cwal16
+paru -Sashwal
 ```
 
 ### Building from Source
@@ -102,13 +97,13 @@ paru -S cwal16
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/shadowash8/cwal16.git
-cd cwal16
+git clone https://github.com/shadowash8/ashwal.git
+cdashwal
 ```
 
 2. **Build and install:**
 
-*User-specific:*
+_User-specific:_
 
 ```bash
 mkdir build && cd build
@@ -117,7 +112,7 @@ make
 make install
 ```
 
-*System-wide:*
+_System-wide:_
 
 ```bash
 mkdir build && cd build
@@ -127,10 +122,11 @@ sudo make install
 ```
 
 ## Documentation
-- [Getting Started](https://github.com/shadowash8/cwal16/wiki/Getting-Started)
-- [Templates](https://github.com/shadowash8/cwal16/wiki/Templates)
-- [Advanced Usage](https://github.com/shadowash8/cwal16/wiki/Advanced)
-- [Plugins](https://github.com/shadowash8/cwal16/wiki/Plugins)
+
+- [Getting Started](https://github.com/shadowash8/ashwal/wiki/Getting-Started)
+- [Templates](https://github.com/shadowash8/ashwal/wiki/Templates)
+- [Advanced Usage](https://github.com/shadowash8/ashwal/wiki/Advanced)
+- [Plugins](https://github.com/shadowash8/ashwal/wiki/Plugins)
 
 ## Contributing
 
@@ -141,7 +137,6 @@ Report issues, request features, or contribute via PRs. See the GitHub repositor
 Licensed under GNU GPL v3.0 — always free and open-source.
 
 **Star the project on GitHub if you find it useful!**
-
 
 ## Special Thanks
 

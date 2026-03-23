@@ -8,7 +8,7 @@
 #include <string.h>
 #include <sys/stat.h>
 
-extern ImageBackend cwal;
+extern ImageBackend ashwal;
 extern ImageBackend libimagequant;
 
 #define MAX_BACKENDS 64
@@ -18,7 +18,7 @@ static char *lua_script_paths[MAX_BACKENDS];
 static int num_lua_scripts = 0;
 
 static void init_builtin_backends() {
-  available_backends[num_backends++] = &cwal;
+  available_backends[num_backends++] = &ashwal;
   available_backends[num_backends++] = &libimagequant;
   available_backends[num_backends] = NULL;
 }
@@ -203,12 +203,12 @@ void init_backends() {
 
 ImageBackend *backend_get(const char *name) {
   if (!name || strlen(name) == 0)
-    return &cwal;
+    return &ashwal;
   for (ImageBackend **backend = available_backends; *backend; backend++) {
     if (strcmp(name, (*backend)->name) == 0)
       return (*backend);
   }
-  return &cwal;
+  return &ashwal;
 }
 
 void list_all_backends() {

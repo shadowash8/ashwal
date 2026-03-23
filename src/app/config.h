@@ -2,8 +2,8 @@
 
 #include "core.h"
 
-#define CONFIG_PATH "~/.config/cwal/cwal.ini"
-#define CONFIG_DIR "~/.config/cwal/"
+#define CONFIG_PATH "~/.config/ashwal/ashwal.ini"
+#define CONFIG_DIR "~/.config/ashwal/"
 #define MAX_LINE_LENGTH 256
 
 typedef struct {

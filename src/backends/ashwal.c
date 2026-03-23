@@ -29,7 +29,7 @@ static inline int resize_image(MagickWand *wand, float amount) {
   return 0;
 }
 
-int generate_palette_cwal(RawImage *image, Palette *palette) {
+int generate_palette_ashwal(RawImage *image, Palette *palette) {
   if (!image || !palette || !image->pixels) {
     return -1;
   }
@@ -97,7 +97,7 @@ int generate_palette_cwal(RawImage *image, Palette *palette) {
   return status;
 }
 
-ImageBackend cwal = {.name = "cwal",
+ImageBackend ashwal = {.name = "ashwal",
                      .init_backend = init_magickwand,
                      .terminate_backend = terminate_magickwand,
-                     .generate_palette = generate_palette_cwal};
+                     .generate_palette = generate_palette_ashwal};

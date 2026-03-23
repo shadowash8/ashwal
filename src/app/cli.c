@@ -49,7 +49,7 @@ int parse_cli_args(int argc, char **argv, Config *config, CliArgs *args) {
   args->saturation = 0.0f;        // Default saturation
   args->contrast = 1.0f;          // Default contrast
   args->alpha = 1.0f;             // Default alpha
-  args->backend = strdup("cwal"); // Default backend
+  args->backend = strdup("ashwal"); // Default backend
   args->script_path = NULL;       // Will be set by --script
   args->out_dir = strdup(config->out_dir); // Only out_dir is loaded from config
   args->no_reload = false;
@@ -171,7 +171,7 @@ int parse_cli_args(int argc, char **argv, Config *config, CliArgs *args) {
       args->preview = true;
       break;
     case 'V':
-        printf("cwal16 %s\n", CWAL_VERSION);
+        printf("ashwal %s\n", ASHWAL_VERSION);
         exit(0);
     case 'h':
       print_usage(argv[0]);

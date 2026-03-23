@@ -114,7 +114,7 @@ Config *load_config(void) {
   }
 
   // Set default values (these can be overridden by CLI arguments)
-  config->out_dir = expand_home("~/.cache/cwal/"); // Default out_dir
+  config->out_dir = expand_home("~/.cache/ashwal/"); // Default out_dir
   config->current_wallpaper = NULL; // Not loaded from config, set by CLI
   config->backend = NULL;           // Not loaded from config, set by CLI
   config->mode = DARK;              // Default mode

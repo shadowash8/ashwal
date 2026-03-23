@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.12)
-project(cwal16 VERSION 1.0.0 LANGUAGES C)
+project(ashwal VERSION 1.0.0 LANGUAGES C)
 
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED ON)
@@ -24,7 +24,7 @@ set(SOURCES
     src/app/config.c
     src/app/main.c
     src/backends/backend.c
-    src/backends/cwal.c
+    src/backends/ashwal.c
     src/backends/libimagequant.c
     src/backends/lua_backend.c
     src/color/color_convertion.c
@@ -42,10 +42,10 @@ set(SOURCES
 )
 
 # Create executable
-add_executable(cwal ${SOURCES})
+add_executable(ashwal ${SOURCES})
 
 # Include directories
-target_include_directories(cwal PRIVATE
+target_include_directories(ashwal PRIVATE
     ${PROJECT_SOURCE_DIR}/include
     ${PROJECT_SOURCE_DIR}/src
     ${PROJECT_BINARY_DIR}
@@ -55,7 +55,7 @@ target_include_directories(cwal PRIVATE
 )
 
 # Link libraries
-target_link_libraries(cwal
+target_link_libraries(ashwal
     ${MagickWand_LIBRARIES}
     ${imagequant_LIBRARIES}
     ${Lua_LIBRARIES}
@@ -63,13 +63,13 @@ target_link_libraries(cwal
 )
 
 # Set compiler flags for dependencies
-target_compile_options(cwal PRIVATE
+target_compile_options(ashwal PRIVATE
     ${MagickWand_CFLAGS_OTHER}
     ${imagequant_CFLAGS_OTHER}
     ${Lua_CFLAGS_OTHER}
 )
 
 # Installation
-install(TARGETS cwal DESTINATION bin)
-install(DIRECTORY templates DESTINATION share/cwal)
-install(DIRECTORY themes DESTINATION share/cwal)
+install(TARGETS ashwal DESTINATION bin)
+install(DIRECTORY templates DESTINATION share/ashwal)
+install(DIRECTORY themes DESTINATION share/ashwal)

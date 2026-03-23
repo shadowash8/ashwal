@@ -10,11 +10,11 @@
 #include <time.h>
 
 static char **get_theme_dirs() {
-  char *user_config_themes = expand_home("~/.config/cwal/themes");
-  char *user_local_themes = expand_home("~/.local/share/cwal/themes");
+  char *user_config_themes = expand_home("~/.config/ashwal/themes");
+  char *user_local_themes = expand_home("~/.local/share/ashwal/themes");
 
   const char *theme_dirs[] = {user_config_themes, user_local_themes,
-                              "/usr/local/share/cwal/themes", NULL};
+                              "/usr/local/share/ashwal/themes", NULL};
 
   char **dirs = malloc(sizeof(char *) * 4);
   for (int i = 0; theme_dirs[i] != NULL; i++) {
@@ -44,7 +44,7 @@ int load_theme(Palette *palette, const char *theme_name) {
 
     char *dark_path = build_path(theme_dirs[i], "dark");
     char *full_path = build_path(dark_path, theme_name);
-    snprintf(theme_path, sizeof(theme_path), "%s.cwal", full_path);
+    snprintf(theme_path, sizeof(theme_path), "%s.ashwal", full_path);
     file = fopen(theme_path, "r");
     free(dark_path);
     free(full_path);
@@ -53,7 +53,7 @@ int load_theme(Palette *palette, const char *theme_name) {
 
     char *light_path = build_path(theme_dirs[i], "light");
     full_path = build_path(light_path, theme_name);
-    snprintf(theme_path, sizeof(theme_path), "%s.cwal", full_path);
+    snprintf(theme_path, sizeof(theme_path), "%s.ashwal", full_path);
     file = fopen(theme_path, "r");
     free(light_path);
     free(full_path);

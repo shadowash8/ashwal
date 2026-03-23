@@ -1,4 +1,4 @@
-NAME=cwal
+NAME=ashwal
 BG={color0.strip}
 FG={color15.strip}
 MENU_BG={color0.strip}
