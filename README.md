@@ -87,9 +87,9 @@ brew install imagemagick libimagequant lua
 Install directly from the AUR:
 
 ```bash
-yay -Sashwal
+yay -S ashwal
 # or
-paru -Sashwal
+paru -S ashwal
 ```
 
 ### Building from Source
