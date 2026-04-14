@@ -98,7 +98,6 @@ int load_theme(Palette *palette, const char *theme_name) {
   }
 
   fclose(file);
-  palette->wallpaper = NULL;
   logging(INFO, "Loaded theme: %s", theme_name);
   return 0;
 }

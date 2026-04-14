@@ -79,7 +79,17 @@ int main(int argv, char **argc) {
       free_cli_args(&args);
       return -1;
     }
-    palette.cols16_mode = NONE;
+
+    char *image_to_process_path = strdup(args.image_path);
+    const char *path = image_to_process_path;
+    if (!path) {
+      logging(ERROR, "Could not resolve path for %s", image_to_process_path);
+      free(image_to_process_path);
+      free_config(app_config);
+      free_cli_args(&args);
+      return -1;
+    }
+    palette.wallpaper = strdup(path);
   } else {
     char *image_to_process_path = NULL;
     if (args.random_dir) {
